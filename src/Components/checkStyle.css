@@ -1,0 +1,28 @@
+@import '~antd/dist/antd.css';
+
+#submit{
+    background-color:#5b8c00;
+    color:white;
+    margin-left: 930px;
+    
+    padding-left:150px ;
+    padding-right:150px ;
+
+}
+
+
+.table{
+    margin-left: 100px;
+}
+
+.wine{
+    margin-left: 200px;
+}
+
+.pa{
+    font-family: "Times New Roman";
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bold;
+    margin-Left : '600px';
+}

@@ -1,0 +1,28 @@
+
+.Item
+{
+    display:flex; 
+    flex-direction: row;
+    
+}
+
+#info{
+    font-size: 15px;
+}
+
+.input
+{
+    background-color: white;
+    width: 30px; 
+    text-align: center;
+} 
+
+
+.button {
+    outline: 0;
+    box-shadow:none;
+}
+
+#m1{
+    margin-left:5px;
+}

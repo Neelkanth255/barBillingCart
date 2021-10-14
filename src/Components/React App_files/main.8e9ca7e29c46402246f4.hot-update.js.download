@@ -1,0 +1,165 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/Components/block.js":
+/*!*********************************!*\
+  !*** ./src/Components/block.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _blockStyle_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./blockStyle.css */ "./src/Components/blockStyle.css");
+/* harmony import */ var _blockStyle_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_blockStyle_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "../node_modules/bootstrap/dist/css/bootstrap.min.css");
+/* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! antd/dist/antd.css */ "./node_modules/antd/dist/antd.css");
+/* harmony import */ var antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(antd_dist_antd_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var antd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! antd */ "./node_modules/antd/es/index.js");
+var _jsxFileName = "C:\\Users\\Neelkanth.m\\terasol\\src\\Components\\block.js";
+
+
+
+
+
+
+class Block extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
+  constructor(...args) {
+    super(...args);
+    this.state = {
+      count: 0,
+      priceB: this.props.price,
+      // Parent
+      Name: this.props.name,
+      // Parent
+      img: this.props.imge // Parent
+
+    };
+
+    this.handlePlus = async e => {
+      // console.log(this.state.count);
+      e.persist(); // console.log(e.target);
+
+      await this.setState({
+        count: this.state.count + 1
+      });
+      await this.props.Identity(e.target);
+      await this.props.count(this.state.count);
+    };
+
+    this.handleMinus = async e => {
+      // console.log(this.state.count);
+      if (this.state.count >= 1) await this.setState({
+        count: this.state.count - 1
+      });
+      await this.props.Identity(e.target);
+      await this.props.count(this.state.count);
+    };
+  }
+
+  render() {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "p-4",
+      class: "Item",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 39,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: this.state.img,
+      height: "120",
+      width: "120",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("pre", {
+      id: "info",
+      className: "pl-3",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 21
+      }
+    }, this.state.Name), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 46
+      }
+    }), "$ ", this.state.priceB), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: "pt-4   ",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 49,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: this.handleMinus,
+      name: "Minus",
+      class: "button",
+      className: "btn border rounded-0 bg-white m-1",
+      type: "button",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 50,
+        columnNumber: 21
+      }
+    }, "-"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      class: "button",
+      className: "btn border rounded-0 bg-white",
+      type: "button",
+      disabled: true,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 51,
+        columnNumber: 21
+      }
+    }, this.state.count), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      onClick: this.handlePlus,
+      name: "Plus",
+      class: "button",
+      className: "btn border  rounded-0 bg-white m-1",
+      type: "button",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 52,
+        columnNumber: 21
+      }
+    }, "+"))));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Block);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.8e9ca7e29c46402246f4.hot-update.js.map

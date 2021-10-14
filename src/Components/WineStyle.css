@@ -1,0 +1,24 @@
+#Main{
+    display: flex;
+    flex-direction: row;
+    margin-left:50px;
+}
+
+#inside{
+    padding-top: 5px;
+    padding-bottom:5px;
+    padding-left:65px;
+    padding-right:65px;
+
+}
+
+
+
+#Major{
+    padding-right: 0px;
+}
+
+#minor{
+    padding-right:20px;
+    padding-left: 20px;
+}
